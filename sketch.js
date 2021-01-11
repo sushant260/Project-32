@@ -128,7 +128,7 @@ launcher.display();
   }
   }
   async function getBackground(){
-    var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+    var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
     var responsejson=await response.json();
     var dateTime=responsejson.datetime;
     var hour=dateTime.slice(11,13);
